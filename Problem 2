@@ -1,0 +1,57 @@
+//A program that store temperature of Province A, Province B and Province C for a week(seven days) and display it. 
+
+#include <iostream>
+using namespace std;
+
+const int province = 3;
+const int week = 7;
+
+int main()
+{
+   double PA[7]; 
+   double PB[7]; 
+   double PC[7]; 
+   double A, B, C;
+   
+   cout<<"Enter temperature of Province A for the week. "  <<endl;  
+   	 for ( int x = 1; x <=7; x++ ) 
+   	 {
+    	cout<<"Province A, Day " << x << ": ";
+        cin >> PA[x];
+     }
+   
+   cout<<"Enter temperature of Province B for the week. "  <<endl;
+  	 for ( int x = 1; x <=7; x++ ) 
+  	 {
+  	 	cout<<"Province B, Day " << x << ": ";
+		cin >> PB[x];
+   	 }
+   
+	cout<<"Enter temperature of Province C for the week. "  <<endl;
+   	 for ( int x = 1; x <=7; x++ ) 
+  	 {
+		cout<<"Province C, Day " << x << ": ";
+		cin >> PC[x];
+     }
+   
+   cout << endl << "Displaying Values:" << endl;
+  	 for ( int y = 1; y <= 7; y++ )
+     {
+     	 A = PA[y];
+     	 cout <<"Province A, Day "<< y << "= "<< A << endl;
+   	 }
+
+  	 for ( int y = 1; y <= 7; y++ ) 
+     {
+  	     B = PB[y];
+   	     cout <<"Province B, Day "<< y << "= "<< B << endl;
+     }
+
+  	 for ( int y = 1; y <= 7; y++ ) 
+     {
+  		  C = PC[y];
+   		  cout <<"Province C, Day "<< y << "= "<< C<< endl;
+     }
+     
+    return 0;
+}
